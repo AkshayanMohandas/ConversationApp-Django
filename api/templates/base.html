@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container-1">
+        <h1>The best way to learn a new language.</h1>
+        <br><br><br><br>
+        <a href="{% url 'index' %}" class="btn custom-button">Try it now!</a>
+        <br><br><br><br>
+        <a href="{% url 'index' %}" class="btn custom-button custom-button1">Google</a>
+        <br>
+        <a href="{% url 'index' %}" class="btn custom-button custom-button2">Apple</a>
+        <br>
+        <a href="{% url 'index' %}" class="btn custom-button custom-button3">Facebook</a>
+        <br>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
